@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        ul li{list-style:none;}
+        a{text-decoration: none;}
+        ul{padding-left: 100px;}
+        ul li{float:left;}
+        ul li a{display:block;height: 22px;background:url(../images/sprites_left.png) no-repeat;margin-right: 5px;padding-left: 20px;}
+        ul li a span{display:block;height: 22px;background:url(../images/sprites_right.gif) no-repeat right top;padding-right: 20px;}
+        ul .li2 a{background-position: -26px 0;}
+        ul .li3 a{background-position: -52px 0;}
+        ul .li4 a{background-position: -78px 0;}
+        ul li:hover a{background-position: 0 -22px;}
+        ul .li2:hover a{background-position: -26px -22px;}
+        ul .li3:hover a{background-position: -52px -22px;}
+        ul .li4:hover a{background-position: -78px -22px;}
+        ul li:hover span{background-position: 0 -22px;}
+
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#"><span>哈哈</span></a></li>
+        <li class="li2"><a href="#"><span>哈想哈</span></a></li>
+        <li class="li3"><a href="#"><span>哈哈电费</span></a></li>
+        <li class="li4"><a href="#"><span>哈哈电费</span></a></li>
+    </ul>
+</body>
+</html>

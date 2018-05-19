@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        .bigbox{
+            width: 1000px;
+            height: 800px;
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border:1px solid #ccc;
+            margin:100px auto;
+        }
+        .bigbox .midbox{
+            height: 100px;
+            margin-bottom: 5px;
+            display:flex;
+        }
+        .bigbox .midbox1{
+            justify-content: space-between;
+        }
+        .bigbox .midbox .smallbox{
+            height: 100px;
+            background:pink;
+            border:2px solid #fff;
+        }
+        .bigbox .midbox:nth-child(1) .smallbox{
+            width: 50%;
+
+        }
+        .bigbox .midbox:nth-child(2) .smallbox{
+            width: 30%;
+        }
+        .bigbox .midbox:nth-child(3) .smallbox{
+            width: 40%;
+        }
+        .bigbox .midbox:nth-child(4) .smallbox:nth-child(1){
+            width: 50%;
+        }
+        .bigbox .midbox:nth-child(4) .smallbox:nth-child(2){
+            flex:1;
+        }
+        .bigbox .midbox:nth-child(4) .smallbox:nth-child(3){
+            flex:1;
+        }
+        .bigbox .midbox:nth-child(5) .smallbox:nth-child(1){
+            flex:1;
+        }
+        .bigbox .midbox:nth-child(5) .smallbox:nth-child(2){
+            width: 30%;
+        }
+        .bigbox .midbox:last-child .smallbox:nth-child(1){
+            width: 40%;
+        }
+         .bigbox .midbox:last-child .smallbox:nth-child(2){
+            flex:1;
+        }
+         .bigbox .midbox:last-child .smallbox:nth-child(3){
+            width: 30%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="midbox midbox1">
+            <div class="smallbox">1/2</div>
+            <div class="smallbox">1/2</div>
+        </div>
+        <div class="midbox midbox1">
+            <div class="smallbox">1/3</div>
+            <div class="smallbox">1/3</div>
+            <div class="smallbox">1/3</div>
+        </div>
+        <div class="midbox">
+            <div class="smallbox">1/4</div>
+            <div class="smallbox">1/4</div>
+            <div class="smallbox">1/4</div>
+            <div class="smallbox">1/4</div>
+        </div>
+        <div class="midbox">
+            <div class="smallbox">1/2</div>
+            <div class="smallbox">auto</div>
+            <div class="smallbox">auto</div>
+        </div>
+        <div class="midbox">
+            <div class="smallbox">auto</div>
+            <div class="smallbox">1/3</div>
+        </div>
+        <div class="midbox">
+            <div class="smallbox">1/4</div>
+            <div class="smallbox">auto</div>
+            <div class="smallbox">1/3</div>
+        </div>
+    </div>
+</body>
+</html>

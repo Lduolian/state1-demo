@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        div{position: relative;transform-style:preserve-3d;}
+        div img{position:absolute;}
+        div img:nth-child(1){transform:translateZ(100px);}
+        div img:nth-child(2){transform:translateZ(-100px);}
+        /*div img:first-child{z-index:100;}*/
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/01.jpg" alt="" />
+        <img src="../images/02.jpg" alt="" />
+
+    </div>
+</body>
+</html>

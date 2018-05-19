@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        ul li{list-style: none;}
+        /*.tab{overflow:hidden;}*/
+        .tab li{float:left;position:relative;width: 150px;height: 40px;transition:transform 3s;transform-style:preserve-3d;}
+        .tab li:nth-child(2){transition-delay:0.2s;}
+        .tab li:nth-child(3){transition-delay:0.4s;}
+
+        .tab li:nth-child(4){transition-delay:0.6s;}
+        .tab li:nth-child(5){transition-delay:0.8s;}
+
+        .tab li span{display:block;width: 150px;height: 40px;background:yellow;position:absolute;top: 0;left: 0;font-size: 12px;line-height: 40px;text-align: center;}
+        li span:nth-child(1){transform:translateY(-20px) rotateX(90deg);background:green;}
+        li span:nth-child(2){transform:translateZ(20px);}
+        .tab:hover li{transform:rotateX(-90deg);}
+    </style>
+</head>
+<body>
+    <ul class="tab">
+        <li><span>html5学习</span><span>前端技术开发</span></li>
+        <li><span>html5学习</span><span>前端技术开发</span></li>
+        <li><span>html5学习</span><span>前端技术开发</span></li>
+        <li><span>html5学习</span><span>前端技术开发</span></li>
+        <li><span>html5学习</span><span>前端技术开发</span></li>
+    </ul>
+</body>
+</html>

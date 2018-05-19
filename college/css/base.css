@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul, ol { list-style:none; }
+/*input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}*/
+select, input { vertical-align:middle;}
+/*select, input, textarea { font-size:12px; margin:0; }*/
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+
+
+/*添加公共样式*/
+/*body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}*/
+.clearfix:before,.clearfix:after {  /*清楚浮动*/
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+/*a:hover{color:#C81623;}*/
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:1em;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+
+
+/*公共类*/
+.container {  /*版心 提取 */
+    width: 1002px;
+    margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.al {
+    text-align:left;
+}
+.ac {
+    text-align:center;
+}
+.ar {
+    text-align:right;
+}
+.hide {
+    display:none;
+}
+.font12{ font-size: 12px;}
+.font14{ font-size: 14px;}
+.font16{ font-size: 16px;}
+
+/*公共部分*/
+/*头部导航开始*/
+#jianqiao{min-width:1002px;width: 100%;}
+#j_header{background:#E4E4E4;}
+#j_header .container{height: 35px;}
+#j_header .header_l{}
+#j_header .header_l li{float:left;}
+#j_header .header_l li a{display:block;height: 23px;color:#68696B;font-size: 12px;padding-top: 12px;}
+#j_header .header_l li a span{display:block;height: 14px;padding:0 10px 0 7px;border-right:1px solid #D5D5D5;}
+#j_header .header_r{width: 367px;height: 35px;}
+#j_header .header_r li{float:left;}
+#j_header .header_r li a{display:block;height: 35px;color:#68696B;font-size: 12px;line-height: 35px;padding-right: 17px;}
+#j_header .header_r form{padding-top: 10px;position:relative;}
+#j_header .header_r form input{width: 140px;height: 20px;padding-left: 5px;font-size: 12px;color:#CAD5E7;}
+#j_header .header_r form i{display:block;width: 29px;height: 20px;background:url(../images/sprits.png) no-repeat -220px -35px;position: absolute;right:0;top:50%;margin-top: -4px;}
+#j_logo .container{height: 79px;padding-top: 19px;background:url(../images/logo_bg.jpg) no-repeat right 0;}
+#j_logo h1{width: 339px;height: 50px;background:url(../images/logo.jpg) no-repeat;}
+#j_nav{background:#D92B34;}
+#j_nav .container{height: 44px;padding-left: 26px;background:#C9131F;}
+#j_nav li{float:left;}
+#j_nav li a{display:block;height: 44px;font-size: 16px;line-height: 44px;color:#FFFFFF;padding-right: 36px;}
+#j_banner .container{height: 328px;}
+#j_banner .banner_l{height: 328px;width: 669px;background:pink;}
+#j_banner .banner_r{height: 315px;width: 293px;padding-top: 11px;border-bottom: 2px solid #C8141F;}
+#j_banner .banner_r a{display:block;height: 57px;font-size: 12px;line-height: 20px;color:#010101;border-bottom:1px dashed #DADADA;padding-top: 4px;}
+#j_banner .banner_r a span{color:#77787A;}
+
+#j_main{border-bottom: 5px solid #FF9C00;position:relative;}
+
+#j_main .container{height: 588px;}
+#j_main .main_l{width: 729px;height: 588px;}
+#j_main .main_l .main_l0 h3{height: 38px;font-size: 16px;line-height: 38px;color:#333331;border-bottom: 2px solid #ECECEC;padding-top: 42px;}
+#j_main .main_l .main_l1{width: 269px;height: 252px;}
+#j_main .main_l .main_l1 .pic{width: 269px;height: 121px;padding-top: 21px;}
+#j_main .main_l .main_l1 p{font-size: 14px;line-height: 30px;color:#656565;padding-left: 17px;}
+#j_main .main_l .main_l2{width: 420px;height: 246px;padding-top: 6px;}
+#j_main .main_l .main_l2 .main_l2_t{width: 344px;height: 61px;padding-top: 13px;padding-left: 76px;position:relative;}
+#j_main .main_l .main_l2 .main_l2_t i{display:block;width: 60px;height: 61px;background:url(../images/main1.jpg) no-repeat;position:absolute;top: 13px;left: 0;}
+#j_main .main_l .main_l2 .main_l2_t h4{font-size: 12px;line-height: 20px;color:#282627;}
+#j_main .main_l .main_l2 .main_l2_t p{font-size: 12px;line-height: 18px;color:#6D6F6E;}
+/*#j_main .main_l .main_l3{width: 269px;height: 235px;padding-top: 19px;}*/
+#j_main .main_l .main_l3 ul{height: 153px;width: 269px;padding-top: 19px;}
+#j_main .main_l .main_l3 li a{display:block;height: 24px;font-size: 12px;line-height: 24px;color:#343235;}
+
+#j_main .main_l .main_l4{width: 420px;height: 336px;}
+#j_main .main_l .main_l4{height: 235px;padding-top: 19px;}
+#j_main .main_l .main_l4 li a{display:block;font-size: 12px;line-height: 24px;color:#343235;}
+#j_main .main_r{width: 241px;height: 588px;}
+#j_main .main_r .main_r_t{width: 241px;height: 271px;padding-top: 41px;}
+#j_main .main_r .main_r_t .pic{width: 241px;height: 271px;background:url(../images/main2.jpg) no-repeat;}
+#j_main .main_r .main_r_b{width: 241px;height: 276px;}
+#j_main .main_r .main_r_b h3{height: 38px;border-bottom: 1px solid #ccc;font-size: 16px;line-height: 38px;padding-top: 32px;}
+#j_main .main_r .main_r_b form{width: 241px;height: 174px;padding-top: 31px;}
+#j_main .main_r .main_r_b form .txt{display:block;width: 216px;height: 28px;border:1px solid #ccc;}
+#j_main .main_r .main_r_b form .pwd{display:block;width: 216px;height: 28px;border:1px solid #ccc;}
+#j_main .main_r .main_r_b form .btn{width: 78px;height: 23px;background:#F0F0F0;border:1px solid #ccc;}
+#j_side{background:#EBEBEB;}
+#j_side .container{height: 24px;}
+/*#j_side i{display:block;width: 61px;height: 14px;background:url(../images/main_bottom.jp) no-repeat;position:absolute;top:0;left: 0;}*/
+
+
+#j_links{background:#D4D4D4;}
+#j_links .container{height: 42px;padding-left: 69px;}
+#j_links li{float:left;}
+#j_links li a{display:block;padding-right:130px;font-size: 12px;line-height: 42px;height: 42px;}
+#j_teach{background:#302728;}
+#j_teach .container{height: 48px;}
+#j_teach li{float:left;}
+#j_teach li a{display:block;height: 30px;padding-top: 18px;}
+#j_teach li a span{display:block;height: 14px;font-size: 12px;color:#fff;border-right: 1px solid #fff;padding:0 12px 0 10px;}
+#j_footer{background:#302728;}
+#j_footer .container{height: 62px;text-align: center;padding-top: 20px;}
+#j_footer p{font-size: 12px;line-height: 22px;color:#787356;}
+
+
+
+
+
+/*#famousShops{width: 100%;height: 3000px;}*/

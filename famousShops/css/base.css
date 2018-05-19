@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul, ol { list-style:none; }
+/*input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}*/
+select, input { vertical-align:middle;}
+/*select, input, textarea { font-size:12px; margin:0; }*/
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+
+
+/*添加公共样式*/
+/*body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}*/
+.clearfix:before,.clearfix:after {  /*清楚浮动*/
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+/*a:hover{color:#C81623;}*/
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:1em;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+
+
+/*公共类*/
+.container {  /*版心 提取 */
+    width: 1190px;
+    margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.al {
+    text-align:left;
+}
+.ac {
+    text-align:center;
+}
+.ar {
+    text-align:right;
+}
+.hide {
+    display:none;
+}
+.font12{ font-size: 12px;}
+.font14{ font-size: 14px;}
+.font16{ font-size: 16px;}
+
+/*公共部分*/
+/*头部导航开始*/
+
+
+
+/*#famousShops{width: 100%;height: 3000px;}*/
+#header{/*height: 24px;*/background:#EEEEEE;}
+#header .container{/*height: 23px;*/border-bottom: 1px solid #D5D5D5;}
+#header ul li{float:left;position:relative;}
+#header ul li a{height: 24px;float:left;font-size: 12px;line-height: 24px;}
+#header ul li a span{padding:0 16px 0 15px;border-right: 1px solid #d5d5d5;}
+#header ul .icon_l span{padding-left: 35px;}
+#header ul .icon_r span{padding-right: 26px;}
+#header ul .icon_arror{display:block;width: 12px;height: 9px;background:url(../images/sprits.png);position:absolute;right: 12px;top: 50%;margin-top: -4px;}
+#header ul .icon0{display:block;width: 20px;height: 20px;background:url(../images/sprits.png) -30px 0;position:absolute;left: 0;top:50%;margin-top: -10px;}
+#header ul .icon_qq{background-position: -60px 0;}
+#header ul .icon_tel{background-position: -90px 0;}
+
+/*--------logo---------------*/
+/*#logo{height: 77px;}*/
+#logo .logo_l{width: 430px;/*height: 77px;*/}
+#logo .logo_l h1{padding:19px 0 0 278px;font-size: 16px;line-height: 58px;background:url(../images/logo.jpg) no-repeat;}
+
+
+#logo .logo_c{width: 340px;/*height: 61px;*/padding:16px 0 0 110px;}
+#logo .logo_c form{width: 340px;/*height: 30px;*/}
+#logo .logo_c form .txt{width: 273px;height: 28px;border:1px solid #D5D5D5;border-right:0 none;font-size: 12px;color:#676767;}
+#logo .logo_c form .btn{width: 65px;height: 30px;background:#444444;color:#fff;font-size: 14px;}
+#logo .logo_c p{color:#CBCBCB;font-size: 12px;line-height: 30px;}
+#logo .logo_c p a{font-size: 12px; line-height: 30px;color:#898989;}
+
+
+#logo .logo_r{width: 124px;/*height: 34px;*/background:#F3F3F3;margin:20px 0 0 184px;border:1px solid #ccc;position:relative;}
+#logo .logo_r p{font-size: 12px;line-height: 34px;color:#898989;padding-left: 45px;}
+#logo .logo_r p span{color:#BE0D1D;}
+#logo .logo_r i{display:block;width: 24px;height: 22px;background:url(../images/sprits.png) no-repeat -120px 0;position:absolute;left: 10px;top: 50%;margin-top: -11px;}
+/*尾部部导航开始*/

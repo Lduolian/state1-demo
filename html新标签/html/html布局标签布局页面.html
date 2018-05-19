@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        .clearfix::after{
+            content:"";
+            display: block;
+            height:0;
+            overflow:hidden;
+            clear:both;
+            visibility:hidden;
+            zoom:1;
+        }
+        #q_header{height: 100px;background:pink;}
+        #q_nav{height: 100px;background:skyblue;margin-top: 20px;}
+        #q_main{margin-top: 20px;}
+        #q_main .main_l{width: 59%;height: 300px;background:yellow;margin-right: 1%;float:left;}
+        #q_main .main_l .main_l_cont{width: 98%;height: 100px;margin:100px 1% 0 1%;background:pink;}
+        #q_main .main_r{width: 40%;height: 300px;background:green;float:right;}
+        #q_footer{height: 100px;background:skyblue;margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <header id="q_header"></header>
+    <nav id="q_nav"></nav>
+    <main id="q_main" class="clearfix">
+        <article class="main_l">
+            <section class="main_l_cont"></section>
+        </article>
+        <aside class="main_r"></aside>
+    </main>
+    <footer id="q_footer"></footer>
+</body>
+</html>

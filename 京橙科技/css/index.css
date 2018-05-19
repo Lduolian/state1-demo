@@ -1,0 +1,33 @@
+/*#j_main{height: 1000px;background:pink;}*/
+
+#j_main .title{height: 217px;text-align:center;}
+#j_main .title h2{width: 328px;height: 80px;margin:0 auto;font-size: 34px;line-height: 78px;color:#000000;padding-top: 27px;border-bottom:1px solid #000000;position: relative;}
+#j_main .title h2 i{display: block;width: 24px;height: 4px;background:url(../images/sprites.png) no-repeat;position:absolute;bottom:-2px;left: 152px;}
+#j_main .title p{font-size: 16px;line-height: 80px;color:#9999B0;}
+#j_main .pic{height: 126px;background:blue;}
+#j_main .list{height: 182px;padding-left: 174px;}
+#j_main .list dl{float:left;padding-right: 189px;}
+#j_main .list dl dt{font-size: 20px;line-height: 62px;color:#000;padding-top: 10px;}
+#j_main .list dl dd{font-size: 12px;line-height: 24px;color:#000;}
+#j_main .title2{height: 280px;}
+#j_main .title2 h2{padding-top: 108px;}
+#j_main .show{height: 422px;padding-left: 72px;}
+#j_main .show .show_1{width: 265px;height: 176px;margin:0 20px 20px 0;background:url(../images/show1.png) no-repeat;}
+#j_main .show .show_2{background-image: url(../images/show2.png);}
+#j_main .show .show_3{background-image: url(../images/show3.png);}
+#j_main .show .show_4{background-image: url(../images/show4.png);}
+#j_main .show .show_5{background-image: url(../images/show5.png);}
+#j_main .show .show_6{background-image: url(../images/show6.png);}
+#j_main .show .show_7{background-image: url(../images/show7.png);}
+#j_main .show .show_8{background-image: url(../images/show8.png);}
+#j_main .more{height: 113px;}
+#j_main .more p{width: 173px;height: 45px;border:3px solid #717171;margin:0 auto;font-size: 12px;color:#787356;line-height: 45px;text-align: center;}
+#j_section{background:#FAFCFC;}
+#j_section .container{height: 525px;}
+#j_section .title{height: 294px;text-align: center;}
+#j_section .title h2{width: 328px;height: 80px;margin:0 auto;font-size: 34px;line-height: 78px;color:#000000;padding-top: 118px;border-bottom:1px solid #000000;position: relative;}
+#j_section .title h2 i{display: block;width: 24px;height: 4px;background:url(../images/sprites.png) no-repeat;position:absolute;bottom:-2px;left: 152px;}
+#j_section .title p{font-size: 18px;line-height: 60px;color:#C11E2B;padding-top: 35px;}
+#j_section .title~p{font-size: 12px;line-height: 30px;color:#666666;text-indent: 2em;}
+
+
